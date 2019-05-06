@@ -1,0 +1,11 @@
+<h1>Vintao de Jesus</h1>
+<p>Aqui você acha os melhores restaurantes!!</p>
+
+<ul>
+<% @restaurants.each do |restaurant| %>
+  <li> <a href="/restaurants/<%= restaurant.id %>"> <%= restaurant.name %></a></li>
+<% end %>
+</ul>
+
+
+<a href="/restaurants/new">Add a new restaurant</a>
